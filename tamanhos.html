@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tamanhos</h1>
+    <hr />
+    <p>
+      Você pode definir o tamanho dos componentes de forma absoluto, relativa,
+      ou ainda de acordo com os filhos
+    </p>
+    <hr />
+    <p>
+      Por padrão, o componente ocupa exatamente a altura de seus filhos e a
+      largura total da tela
+    </p>
+    <div style="background-color: aqua">
+      div com texto, sem definição de altura nem largura
+    </div>
+    <hr />
+    <p>Caixa de 50x50 pixels (absoluto)</p>
+    <div style="height: 50px; width: 50px; background-color: aqua"></div>
+    <hr />
+    <p>Caixa que sempre ocupa 10% da altura da tela 50% da largura</p>
+    <div style="height: 10vh; width: 50vw; background-color: aqua"></div>
+    <hr />
+    <p>Caixa que ocupa exatamente a largura de seus filhos (fit-content)</p>
+    <div style="width: fit-content; background-color: aqua">
+      <p>Filho 1</p>
+      <p>Filho com texto mais longo</p>
+      <p>Filho 3</p>
+    </div>
+  </body>
+</html>

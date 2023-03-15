@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: black">
+    <h1 style="color: #fafafa">Combinação de componenetes</h1>
+    <hr />
+    <p style="color: #fafafa">
+      Todas esses componentes e estilos podem ser combinados para criar
+      componentes harmoniosos, como esse card:
+    </p>
+    <div
+      onclick="handleCardClick()"
+      id="myCard"
+      style="
+        border-radius: 16px;
+        background-color: #27272a;
+        padding: 16px;
+        display: flex;
+        width: fit-content;
+        cursor: pointer;
+      "
+    >
+      <img
+        style="height: 100px; width: 100px; border-radius: 50px"
+        src="https://github.com/georgehgfonseca.png"
+        alt="Image de perfil no GihHub"
+      />
+      <div style="padding: 8px; padding-left: 16px; justify-content: center">
+        <h2 style="color: #fafafa; margin: 0">George Fonseca</h2>
+        <hr />
+        <h3 id="affiliation" style="color: #bbf7d0; margin: 0">
+          Professor na Universidade Federal de Ouro Preto
+        </h3>
+      </div>
+    </div>
+  </body>
+</html>

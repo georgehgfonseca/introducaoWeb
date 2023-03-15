@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Seletores CSS</h1>
+    <hr />
+    <p>Você pode atribuir estilos CSS às tags HTML de duas formas.</p>
+    <ol>
+      <li>
+        Você pode definir o estilo inline com a propriedade style:
+        <div style="background-color: aquamarine">
+          Cor de fundo aquamarine definida inline
+        </div>
+      </li>
+      <br />
+      <li>
+        Você pode (e é uma boa prática) separar os estilos num arquivo style.css
+        e vinculá-lo ao html com a link (veja acima de title)
+      </li>
+    </ol>
+    <hr />
+    <p>
+      O CSS aplica aos propriedades de acordo com a seguinte ordem de
+      prioridade:
+    </p>
+    <ul>
+      <li>
+        inline - propriedades definidas inline sobrescrevem qualquer outra
+      </li>
+      <li>id - propriedades definidas por id da tag</li>
+      <li>class - propriedades definidas pela classe da tag</li>
+      <li>tag - propriedades definidas para todos elementos de uma tag</li>
+      <li>
+        global - propriedades definidas para todos elementos de todas as tags
+      </li>
+    </ul>
+    <div>Tag div recebe a cor cyan, definida para todas tags div</div>
+    <div class="green">Tag da classe green</div>
+    <div id="container">Tag de id container</div>
+    <div id="container" class="green" style="background-color: purple">
+      A cor purple prevaleceu pois inline tem prioridade
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Border, padding e margin</h1>
+    <hr />
+    <p>
+      Você pode especificar propriedades que definem o contorno (border) dos
+      elementos e seus espaçamentos interno (padding) e externo (margin)
+    </p>
+    <hr />
+    <p>Borda simples, de 4px solid purple</p>
+    <div
+      style="
+        border: 4px solid purple;
+        height: 50px;
+        width: 50px;
+        background-color: aqua;
+      "
+    >
+      Minha caixa
+    </div>
+    <hr />
+    <p>Padding de 4px</p>
+    <div
+      style="padding: 4px; height: 50px; width: 50px; background-color: aqua"
+    >
+      Minha caixa
+    </div>
+    <hr />
+    <p>Margem de 20px</p>
+    <div
+      style="margin: 20px; height: 50px; width: 50px; background-color: aqua"
+    >
+      Minha caixa
+    </div>
+    <hr />
+    <p>
+      Qualquer uma dessas propriedades pode ser defina em apenas direções
+      específicas (top, right, bottom, left). Veja uma caixa com apenas
+      border-bottom
+    </p>
+    <div
+      style="
+        border-bottom: 4px solid purple;
+        height: 50px;
+        width: 50px;
+        background-color: aqua;
+      "
+    >
+      Minha caixa
+    </div>
+    <hr />
+    <p>
+      Alguns componentes têm valor margin aplicado por padrão. A própria tag p
+      aplica margem de 1em (aprox. 22px) em cima e embaixo (tags h1, h2, etc
+      também aplicam essa margem). Veja algumas tags p definidas explicitamente
+      sem margem:
+    </p>
+    <p style="margin: 0px; background-color: lightpink">Tag p sem margem</p>
+    <p style="margin: 0px; background-color: lightgreen">Tag p sem margem</p>
+    <p style="margin: 0px; background-color: lightblue">Tag p sem margem</p>
+  </body>
+</html>

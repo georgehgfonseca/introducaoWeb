@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="handleSubmitForm.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Entrada e formulários</h1>
+    <hr />
+    <p>
+      A tags form, label, input e button são comumente usadas em formulários.
+      Exemplo de label com input de texto:
+    </p>
+    <label>
+      Nome completo
+      <input type="text" />
+    </label>
+    <hr />
+    <p>
+      A propriedade type na tag input define a aparência e comportamento de
+      acordo com o tipo de entrada esperado
+    </p>
+    <label>
+      Data da reserva
+      <input type="datetime-local" />
+    </label>
+    <hr />
+    <p>Agora vejamos um formulário de email e senha:</p>
+    <form>
+      <div style="text-align: center">
+        <label style="display: block; text-align: center">
+          Email
+          <input id="emailField" type="email" />
+        </label>
+        <br />
+        <label style="display: block; text-align: center">
+          Senha
+          <input id="passwordField" type="password" />
+        </label>
+        <br />
+        <div style="width: 100%; justify-content: center">
+          <button onclick="handleSubmitForm()" style="width: 220px">
+            Entrar
+          </button>
+        </div>
+      </div>
+    </form>
+    <hr />
+    <p>
+      Foi adicionada uma propriedade onclick no botão que invoca a função
+      handleSubmitForm() do arquivo handleSubmitForm.js. Veja que a ligação do
+      javascript com o html é feito pela tag script (acima da tag title)
+    </p>
+    <p>
+      Esse botão apenas exibe um texto no console (aperte F12 para ver o
+      console)
+    </p>
+  </body>
+</html>

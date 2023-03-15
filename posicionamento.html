@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Posicionamento</h1>
+    <hr />
+    <p>Você pode definir a disposição dos filhos de uma tag na tela.</p>
+    <hr />
+    <ul>
+      <li>
+        <strong>display block</strong> cada filho ocupa a linha inteira da
+        página, de acordo com sua altura. É o padrão da maioria das tags, como
+        div, h1, p, etc.
+      </li>
+      <li>
+        <strong>display inline</strong> cada filho ocupa a largura necessária
+        para sua exibição. Outros filhos ficam a sua direita. É o padrão de
+        poucas tags, como a strong usada aqui.
+      </li>
+    </ul>
+    <hr />
+    <p>Comportamento padrão de uma div com 3 filhos:</p>
+    <div style="background-color: lightgrey">
+      <div
+        style="height: 50px; width: 50px; background-color: lightgreen"
+      ></div>
+      <div style="height: 50px; width: 50px; background-color: lightpink"></div>
+      <div style="height: 50px; width: 50px; background-color: lightblue"></div>
+    </div>
+    <hr />
+    <p>Div de 3 filhos com display alterado para flex:</p>
+    <div style="background-color: lightgrey; display: flex">
+      <div
+        style="height: 50px; width: 50px; background-color: lightgreen"
+      ></div>
+      <div style="height: 50px; width: 50px; background-color: lightpink"></div>
+      <div style="height: 50px; width: 50px; background-color: lightblue"></div>
+    </div>
+    <hr />
+    <p>
+      A propriedade justify-content define como os filhos são distribuídos no
+      eixo primário (horizontal). Veja com o valor center:
+    </p>
+    <div
+      style="
+        background-color: lightgrey;
+        display: flex;
+        justify-content: center;
+      "
+    >
+      <div
+        style="height: 50px; width: 50px; background-color: lightgreen"
+      ></div>
+      <div style="height: 50px; width: 50px; background-color: lightpink"></div>
+      <div style="height: 50px; width: 50px; background-color: lightblue"></div>
+    </div>
+    <hr />
+    <p>
+      Outras opções comuns são: start (padrão), end, space-evenly, space-between
+      (exemplo a seguir):
+    </p>
+    <div
+      style="
+        background-color: lightgrey;
+        display: flex;
+        justify-content: space-between;
+      "
+    >
+      <div
+        style="height: 50px; width: 50px; background-color: lightgreen"
+      ></div>
+      <div style="height: 50px; width: 50px; background-color: lightpink"></div>
+      <div style="height: 50px; width: 50px; background-color: lightblue"></div>
+    </div>
+    <hr />
+    <p>
+      Quando o pai é maior que um dos filhos (ou todos) pode ser relevante
+      definir o posicionamento vertical dos componentes. Vejamos essa div de
+      200px de altura com filhos de 100, 50 e 150px de altura:
+    </p>
+    <div
+      style="
+        background-color: lightgrey;
+        display: flex;
+        justify-content: center;
+        height: 200px;
+      "
+    >
+      <div
+        style="height: 100px; width: 100px; background-color: lightgreen"
+      ></div>
+      <div style="height: 50px; width: 50px; background-color: lightpink"></div>
+      <div
+        style="height: 150px; width: 150px; background-color: lightblue"
+      ></div>
+    </div>
+    <hr />
+    <p>
+      Podemos definir o alinhamento no eixo secundário (vertical) com a
+      propriedade align-items. As seguintes opções são as mais comuns: start
+      (padrão), end, center (exemplo)
+    </p>
+    <div
+      style="
+        background-color: lightgrey;
+        display: flex;
+        justify-content: center;
+        height: 200px;
+        align-items: center;
+      "
+    >
+      <div
+        style="height: 100px; width: 100px; background-color: lightgreen"
+      ></div>
+      <div style="height: 50px; width: 50px; background-color: lightpink"></div>
+      <div
+        style="height: 150px; width: 150px; background-color: lightblue"
+      ></div>
+    </div>
+  </body>
+</html>
