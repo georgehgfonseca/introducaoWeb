@@ -11,7 +11,7 @@ Esse projeto apresenta uma introdução a essas três tecnologias através de pe
 
 ## 1. Instalação
 
-Não é necessária nenhuma instalação. Basta abrir cada arquivo HTML no seu navegador preferido. Recomendo o uso do editor `VS Code` com as seguintes extensões instaladas:
+Não é necessária nenhuma instalação. Basta abrir cada arquivo HTML no seu navegador preferido. Recomendo o uso do editor [VS Code](https://code.visualstudio.com/) com as seguintes extensões instaladas:
 `Prettier`, `vscode-icons`, `HTML CSS Support`, `ESLint`
 
 ---
@@ -20,7 +20,7 @@ Não é necessária nenhuma instalação. Basta abrir cada arquivo HTML no seu n
 
 ### Textos
 
-Traz exemplos de tags ligadas a textos: `h1` `h2` `p` e suas propriedades css mais comuns: `color` `font-weight` `font-style` `font-size` `font-family` `text-decoration` `text-transform`
+Traz exemplos de tags ligadas a textos: `h1` `h2` `p` e suas propriedades CSS mais comuns: `color` `font-weight` `font-style` `font-size` `font-family` `text-decoration` `text-transform`
 
 ---
 
