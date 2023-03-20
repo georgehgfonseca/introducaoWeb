@@ -1,7 +1,7 @@
 # Introdução às tecnologias web: HTML, CSS e JavaScript
 
 HTML (_HyperText Markup Language_), CSS (_Cascading Style Sheets_) e JavaScript são os pilares de sustentação dos sistemas web modernos:
-- **HTML** é reponsável por definir o que deve ser exibido em tela, a estrutura e hierarquia dos componentes;
+- **HTML** é reponsável por definir o que deve ser exibido em tela, bem como a estrutura e hierarquia dos componentes;
 - **CSS** é responsável por definir a aparência dos componentes em tela, define questões como tamanho, cores, fontes, espaçamentos;
 - **JavaScript** permite que o usuário interaja com o sistema, tratando eventos como um clique em um botão, ou o carregamento de dados externos. 
 
