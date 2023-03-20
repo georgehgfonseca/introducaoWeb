@@ -11,7 +11,7 @@ Esse projeto apresenta uma introdução a essas três tecnologias através de pe
 
 ## 1. Instalação
 
-Não é necessária nenhuma instalação. Basta abrir cada arquivo html no seu navegador preferido. Recomendo o uso do editor `VS Code` com as seguintes extensões instaladas:
+Não é necessária nenhuma instalação. Basta abrir cada arquivo HTML no seu navegador preferido. Recomendo o uso do editor `VS Code` com as seguintes extensões instaladas:
 `Prettier`, `vscode-icons`, `HTML CSS Support`, `ESLint`
 
 ---
@@ -30,9 +30,9 @@ Demonstra como os estilos css podem ser aplicados às tags por `class`, `id`, `t
 
 ---
 
-### Bordas, padding e margem
+### Caixas
 
-Apresenta como as propriedades css `border` `padding` e `margin` afetam a apresentação dos elementos
+Apresenta como as propriedades css `border` `padding` e `margin` afetam a apresentação dos elementos (que podem ser interpretados como caixas)
 
 ---
 
