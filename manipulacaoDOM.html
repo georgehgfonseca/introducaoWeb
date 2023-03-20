@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Lista de tarefas</title>
+  </head>
+  <body>
+    <h1>Tarefas a fazer:</h1>
+    <input id="to-do-input" type="text" placeholder="Digite uma tarefa"></input>
+    <button id="add-button" onclick="handleAddTask()">Adicionar</button>
+    <ul id="task-list">
+    </ul>
+    <script>
+      function handleAddTask() {
+        // get references to HTML elements
+        const newTaskInput = document.getElementById("to-do-input");
+        const taskList = document.getElementById("task-list");
+        const newTask = newTaskInput.value; // get value of input field
+
+        // create new list item and add to list
+        const li = document.createElement("li");
+        li.innerText = newTask;
+        taskList.appendChild(li);
+
+        // clear input field
+        newTaskInput.value = "";
+      }
+    </script>
+  </body>
+</html>

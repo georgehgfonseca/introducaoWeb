@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Buscar de API CEP</title>
+  </head>
+  <body>
+    <h1>CEP API</h1>
+    <p>
+      Busca dados a partir do CEP pela API
+      <a href="viacep.com.br">viacep.com.br</a>
+    </p>
+    <hr />
+    <label
+      >Digite o CEP a buscar: <input id="input-cep" placeholder="Ex: 35931111"
+    /></label>
+    <button id="botaoBuscar">Buscar</button>
+    <hr />
+    <div>
+      <label style="display: flex"
+        >Logradouro: <input id="logradouro" readonly
+      /></label>
+      <br />
+      <label style="display: flex"
+        >Bairro: <input id="bairro" readonly
+      /></label>
+      <br />
+      <label style="display: flex"
+        >Localidade: <input id="localidade" readonly
+      /></label>
+      <br />
+      <label style="display: flex">UF: <input id="uf" readonly /></label>
+      <br />
+    </div>
+    <script>
+      // Obter elementos da DOM
+      const campoCEP = document.getElementById("input-cep");
+      const botaoBuscar = document.getElementById("botaoBuscar");
+      const campoLogradouro = document.getElementById("logradouro");
+      const campoBairro = document.getElementById("bairro");
+      const campoLocalidade = document.getElementById("localidade");
+      const campoUF = document.getElementById("uf");
+
+      // Funcao para buscar por CEP na API
+      function buscarCEP() {
+        // Obter valor da entrada
+        const cep = campoCEP.value.trim();
+        if (cep !== "") {
+          fetch("https://viacep.com.br/ws/" + cep + "/json")
+            .then((response) => response.json())
+            .then((data) => {
+              // Atualiza campos com dados recebidos pela API
+              console.log(data);
+              campoLogradouro.value = data.logradouro;
+              campoBairro.value = data.bairro;
+              campoLocalidade.value = data.localidade;
+              campoUF.value = data.uf;
+            })
+            .catch((error) => console.error(error));
+        }
+        // Limpar campo de texto
+        cep.value = "";
+      }
+
+      botaoBuscar.addEventListener("click", buscarCEP);
+    </script>
+  </body>
+</html>

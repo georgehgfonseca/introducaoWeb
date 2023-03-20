@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>Lista de tarefas</title>
+  </head>
+  <body>
+    <h1>Tarefas a fazer:</h1>
+    <input id="to-do-input" type="text" placeholder="Digite uma tarefa" />
+    <button id="add-button" onclick="handleAddTask()">Adicionar</button>
+    <ul id="task-list"></ul>
+    <script>
+      // Obter elementos da DOM
+      const input = document.getElementById("to-do-input");
+      const addBtn = document.getElementById("add-button");
+      const taskList = document.getElementById("task-list");
+
+      // Inicializar vetor de tarefas
+      let tasks = [];
+
+      // Funcao para adicionar tarefa ao vetor
+      function addTask() {
+        // Obter valor da entrada
+        const task = input.value.trim();
+
+        if (task !== "") {
+          // Adiconar entrada ao vetor
+          tasks.push(task);
+
+          // Limpar campo de texto
+          input.value = "";
+
+          // Renderizar a lista de tarefas
+          renderTasks();
+
+          // Salvar a lista de tarefas no arm. interno
+          saveTasks();
+        }
+      }
+
+      // Funcao para renderizar a lista de tarefas
+      function renderTasks() {
+        // Limpa a lista de tarefas
+        taskList.innerHTML = "";
+
+        // Renderiza cada tarefa
+        tasks.forEach((task, index) => {
+          const li = document.createElement("li");
+          li.innerText = task;
+          taskList.appendChild(li);
+
+          // Adiciona um botão deletar a cada tarefa
+          const deleteBtn = document.createElement("button");
+          deleteBtn.innerText = "Deletar";
+          deleteBtn.addEventListener("click", () => {
+            deleteTask(index);
+          });
+          li.appendChild(deleteBtn);
+        });
+      }
+
+      // Função para deletar uma tarefa da lista
+      function deleteTask(index) {
+        // Remove tarefa do vetor
+        tasks.splice(index, 1);
+
+        // Renderiza a lista de tarefas
+        renderTasks();
+
+        // Salva a lista de tarefas no arm. interno
+        saveTasks();
+      }
+
+      // Função para salvar as tarefas no armazenamento interno
+      function saveTasks() {
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+      }
+
+      // Função para carregar as tarefas no armazenamento interno
+      function loadTasks() {
+        const storedTasks = localStorage.getItem("tasks");
+
+        if (storedTasks !== null) {
+          tasks = JSON.parse(storedTasks);
+          renderTasks();
+        }
+      }
+
+      // Carrega a lista de tarefas do armazenamento interno
+      loadTasks();
+
+      // Adiciona listener de evento de clique do botão
+      addBtn.addEventListener("click", addTask);
+    </script>
+  </body>
+</html>
