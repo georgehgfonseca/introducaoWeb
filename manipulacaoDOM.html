@@ -3,11 +3,24 @@
     <title>Lista de tarefas</title>
   </head>
   <body>
+    <h1>Manipulação da DOM</h1>
+    <hr />
+    <p>
+      Document Object Model (DOM) é um objeto que contém a representação da
+      página web sendo exibida. A DOM parte da especificação HTML, mas pode ser
+      alterada por alguma linguagem de programação ao longo da interação com a
+      página.
+    </p>
+    <p>
+      Nesse exemplo, criamos uma lista de tarefas, que contém uma função
+      JavaScript que é acionada no cique do botão para adicionar uma tag
+      (representando uma nova tarefa) à DOM
+    </p>
+    <hr />
     <h1>Tarefas a fazer:</h1>
-    <input id="to-do-input" type="text" placeholder="Digite uma tarefa"></input>
+    <input id="to-do-input" type="text" placeholder="Digite uma tarefa" />
     <button id="add-button" onclick="handleAddTask()">Adicionar</button>
-    <ul id="task-list">
-    </ul>
+    <ul id="task-list"></ul>
     <script>
       function handleAddTask() {
         // get references to HTML elements
