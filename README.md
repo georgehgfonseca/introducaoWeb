@@ -40,15 +40,15 @@ Apresenta como os elementos abordados podem ser combinados para criar componente
 
 ## Manipulação DOM
 
-Apresenta como manipular a DOM com JavaScript no evento do clique do usuário em um botão. Temos o exemplo de uma lista de tarefas, que podem ser adicionadas pelo usuário.
+Apresenta como manipular a DOM com JavaScript no evento do clique do usuário em um botão. Com o método `addEventListener` podemos 'escutar' o evento de clique no botão; com `document.getElementById` podemos acessar um objeto da DOM; e com `myElement.appendChild` podemos adicionar programaticamente uma nova tag HTML em um elemento. Podemos ver essas funções em ação pelo exemplo de uma lista de tarefas, que podem ser adicionadas pelo usuário.
 
 ## Manipulação DOM v2
 
-Nesse segundo exemplo, temos funcionalidades mais avançadas com relação ao exemplo anterior. Agora salvamos as tarefas em armazenamento interno e temos a opção de deletar tarefas. Caso queira melhorar o design dessa página, pode fazê-lo como exercício.
+Nesse segundo exemplo, temos funcionalidades mais avançadas com relação ao exemplo anterior. Agora salvamos as tarefas em armazenamento interno usando o objeto `localStorage` e temos a opção de deletar tarefas (agora usamos um vetor JavaScript e seus métodos `push`, `splice` e `forEach`). Caso queira melhorar o design dessa página, pode fazê-lo como exercício.
 
 ## Fetch API
 
-Apresenta como buscar dados de uma API através da função `fetch``. Nesse exemplo, com base no CEP informado, buscamos os dados (logradouro, bairro, localidade, etc) na API do Viacep (https://viacep.com.br/).
+Apresenta como buscar dados de uma API através da função `fetch`. Nesse exemplo, com base no CEP informado, buscamos os dados (logradouro, bairro, localidade, etc) na API do Viacep (https://viacep.com.br/).
 
 ## Próximos passos 
 
