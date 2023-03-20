@@ -89,10 +89,11 @@ Apresenta como buscar dados de uma API através da função `fetch`. Nesse exemp
 O mundo do desenvolvimento de software está em constante evolução. Atualmente é pouco usual criar aplicações com HTML, CSS e JavaScript/PHP puros, o que era perfeitamente normal até os anos 2010.
 Sem as bibliotecas modernas de desenvolvimento, a manipulação dos elementos na tela precisa ser feita manualmente com funções do JavaScript para manipular a DOM (arquivo HTML) criando, ou removendo elementos, o que é muito lento, verboso e propício a erros. 
 Essas limitações, junto à demanda por sistemas web dinâmicos, responsivos e atraentes impulsionou o surgimento de diversas bibliotecas e tecnologias que potencializam a produtividade. Dentre elas podemos destacar:
-- **React.js** - biblioteca JavaScript que facilita a atualização da página em resposta à alteração de algum estado;
-- **Next.js** - framework para React.js que provê o carregamento otimizado das páginas e facilidade na construção de rotas da aplicação;
-- **Material UI** - biblioteca de componentes com estilos pré-definidos e aparência similar ao padrão adotado pela Google;
-- **TypeScript** - super-conjunto do JavaScript que permite a definição de tipos às variáveis e objetos;
-- **TailwindCSS** - biblioteca que permite a definição de estilos inline de forma mais produtiva com um tema base;
-- **ReactNative** - biblioteca que permite a programação de aplicativos multi-plataforma em JavaScript usando tecnologias próximas ao HTML e CSS;
-- **Electron** - biblioteca que permite a criação de aplicativos desktop em JavaScript.
+- **[React.js](https://react.dev/)** - biblioteca JavaScript que facilita a atualização da página em resposta à alteração de algum estado;
+- **[Next.js](https://nextjs.org/)** - framework para React.js que provê o carregamento otimizado das páginas e facilidade na construção de rotas da aplicação;
+- **[Material UI](https://mui.com/)** - biblioteca de componentes com estilos pré-definidos e aparência similar ao padrão adotado pela Google;
+- **[TypeScript](https://www.typescriptlang.org/)** - super-conjunto do JavaScript que permite a definição de tipos às variáveis e objetos;
+- **[TailwindCSS](https://tailwindcss.com/)** - biblioteca que permite a definição de estilos inline de forma mais produtiva com um tema base;
+- **[ReactNative](https://reactnative.dev/)** - biblioteca que permite a programação de aplicativos multi-plataforma em JavaScript usando tecnologias próximas ao HTML e CSS;
+- **[Electron](https://www.electronjs.org/)** - biblioteca que permite a criação de aplicativos desktop em JavaScript;
+- **[Vercel](https://vercel.com/)** - plataforma que permite o lançamento automático de páginas na web de forma gratuita (com limitações).
