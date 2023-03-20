@@ -86,8 +86,10 @@ Apresenta como buscar dados de uma API através da função `fetch`. Nesse exemp
 
 ## 3. Próximos passos 
 
-O mundo do desenvolvimento de software está em constante evolução. Atualmente é pouco usual criar aplicações com HTML, CSS e JavaScript/PHP puros, o que era perfeitamente normal até os anos 2010.
+O mundo do desenvolvimento de software está em constante evolução. Atualmente é pouco usual criar sistemas web com HTML, CSS e JavaScript/PHP puros, o que era perfeitamente normal até os anos 2010.
+
 Sem as bibliotecas modernas de desenvolvimento, a manipulação dos elementos na tela precisa ser feita manualmente com funções do JavaScript para manipular a DOM (arquivo HTML) criando, ou removendo elementos, o que é muito lento, verboso e propício a erros. 
+
 Essas limitações, junto à demanda por sistemas web dinâmicos, responsivos e atraentes impulsionou o surgimento de diversas bibliotecas e tecnologias que potencializam a produtividade. Dentre elas podemos destacar:
 - **[React.js](https://react.dev/)** - biblioteca JavaScript que facilita a atualização da página em resposta à alteração de algum estado;
 - **[Next.js](https://nextjs.org/)** - framework para React.js que provê o carregamento otimizado das páginas e facilidade na construção de rotas da aplicação;
