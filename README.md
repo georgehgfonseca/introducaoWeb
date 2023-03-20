@@ -1,10 +1,11 @@
 # Introdução às tecnologias web: HTML, CSS e JavaScript
 
-Esse projeto apresenta as principais tags HTML e propriedades CSS através de exemplos. Cada arquivo html traz exemplos relacionados a um conceito abordado em aula.
+HTML (_Hypertext Markup Language_), CSS (_Cascading Style Sheets_) e JavaScript são os pilares de sustentação dos sistemas web na atualidade. Esse projeto apresenta uma introdução a essas três tecnologias através de pequenos exemplos, cada qual focado em um aspecto dessas tecnologias.
 
 ## Instalação
 
-Não é necessária nenhuma instalação. Basta abrir cada arquivo html no seu navegador preferido.
+Não é necessária nenhuma instalação. Basta abrir cada arquivo html no seu navegador preferido. Recomendo o uso do editor `VS Code` com as seguintes extensões instaladas:
+`Prettier`, `vscode-icons`, `HTML CSS Support`, `ESLint`
 
 ## Textos
 
